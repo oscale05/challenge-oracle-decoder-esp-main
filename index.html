@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="head">
+    <span class="material-icons-outlined">line_style</span>
+    <h1 class="titulo">Encriptador - Desencriptador</h1>
+  </div>
+
+  <div class="banner">
+    <h4>Condiciones de uso:</h4>
+    <ul>
+      <li>No ingresar mayúsculas</li>
+      <li>No ingresar palabras con acentos ni caracteres especiales</li>
+      <li>No ingresar números</li>
+    </ul>
+  </div>
+
+  <main class="main">
+    <div class="row">
+      <section class="form-box col-8">
+        <form action="">
+          <label for="input-texto">Ingresá tu texto aquí abajo</label>
+          <textarea class="text-input" name="input-texto" id="input-texto" placeholder=""></textarea>
+          <div class="actions">
+            <button type="button" class="btn bg-light" id="btn-encriptar">Encriptar</button>
+            <button type="button" class="btn" id="btn-desencriptar">Desencriptar</button>
+          </div> 
+        </form>
+
+        <p id="alerta" class="alerta"></p>
+      </section>
+    
+      <section class="form-box col-4">
+        <label for="input-texto">Mensaje Encriptado</label>
+        <textarea class="text-input  bg-white" id="msg" ></textarea>
+        <div class="actions">
+          <button type="button" class="btn bg-light" id="btn-copy">Copiar</button>
+        </div> 
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright 2022 - Alejandro Franco</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
